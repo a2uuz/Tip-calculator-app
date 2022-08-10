@@ -17,6 +17,7 @@ $Ffamily: "Space Mono", monospace;
 //     @content;
 // }
 body {
+  
   background-color: $Light-grayish-cyan;
   font-size: $Fsize;
   font-family: $Ffamily;
@@ -32,11 +33,10 @@ main {
 }
 
 .wrapper {
+  
   background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
   border-radius: 2rem;
+  padding: 1rem;
 }
 
 .white {
@@ -44,13 +44,7 @@ main {
 
   label {
     color: $Dark-grayish-cyan;
-    font-size: 1.2rem;
-  }
-  input {
-    color: $Very-dark-cyan;
-    background-color: $Very-light-grayish-cyan;
-    outline: none;
-    border: none;
+    font-size: 1rem;
   }
 
   .input-field {
@@ -58,30 +52,81 @@ main {
     padding: 0 1rem;
     background-color: $Very-light-grayish-cyan;
     border-radius: 0.5rem;
+    input {
+      width: 100%;
+      color: $Very-dark-cyan;
+      background-color: $Very-light-grayish-cyan;
+      outline: none;
+      border: none;
+    }
     img {
-    width: 10%;
+      align-self: center;
+      width: 10px;
+      height: 15px;
     }
   }
 
   .btns {
+    display: flex;
+    flex-wrap: wrap;
+
+
     button {
-      cursor: pointer;
-      border: none;
-      border-radius: 0.5rem;
-      background-color: $Very-dark-cyan;
+      width: 145px;
       color: $White;
-      padding: 0.5rem 1rem;
+      background-color: $Very-dark-cyan;
+      border: none;
+      border-radius: 0.3rem;
+      padding: .6rem 1rem;
       margin: 0.2rem;
-      width: 120px;
+      cursor: pointer;
 
       &:nth-child(3) {
         background-color: #26c0ab;
         color: $Very-dark-cyan;
       }
       &:nth-child(6) {
-        color: $Grayish-cyan;
-        background-color: $Light-grayish-cyan;
+        color: $Dark-grayish-cyan;
+        background-color: $Very-light-grayish-cyan;
       }
     }
   }
+}
+
+.green{
+  margin-top:1rem ;
+  background-color: $Very-dark-cyan;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+
+  .result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    h2{
+      font-size: 1rem;
+      color: $Light-grayish-cyan;
+    }
+    span{
+      color: $Grayish-cyan;
+    }
+    p{
+      color: $Strong-cyan;
+      font-size: 2rem;
+      align-self: center;
+      
+    }
+  }
+
+  button{
+    width: 100%;
+    border: 0;
+    border-radius: .5rem;
+    padding: 1rem;
+    color: $Very-dark-cyan;
+    background-color: $Strong-cyan;
+    font-size: 1rem;
+  }
+
 }
