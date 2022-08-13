@@ -17,7 +17,6 @@ $Ffamily: "Space Mono", monospace;
 //     @content;
 // }
 body {
-  
   background-color: $Light-grayish-cyan;
   font-size: $Fsize;
   font-family: $Ffamily;
@@ -33,7 +32,6 @@ main {
 }
 
 .wrapper {
-  
   background-color: #ffffff;
   border-radius: 2rem;
   padding: 1rem;
@@ -52,6 +50,10 @@ main {
     padding: 0 1rem;
     background-color: $Very-light-grayish-cyan;
     border-radius: 0.5rem;
+
+    //    &:focus{
+    //   border: 2px $Strong-cyan solid;
+    // }
     input {
       width: 100%;
       color: $Very-dark-cyan;
@@ -70,63 +72,77 @@ main {
     display: flex;
     flex-wrap: wrap;
 
-
     button {
       width: 145px;
       color: $White;
       background-color: $Very-dark-cyan;
       border: none;
       border-radius: 0.3rem;
-      padding: .6rem 1rem;
+      padding: 0.6rem 1rem;
       margin: 0.2rem;
       cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
 
       &:nth-child(3) {
         background-color: #26c0ab;
         color: $Very-dark-cyan;
       }
-      &:nth-child(6) {
-        color: $Dark-grayish-cyan;
-        background-color: $Very-light-grayish-cyan;
+    }
+
+    #custom {
+      outline: none;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      margin: 0.2rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 0.3rem;
+      width: 115px;
+      background-color: $Very-light-grayish-cyan;
+      color: $Very-dark-cyan;
+
+      &:focus {
+        border: 2px solid $Strong-cyan;
       }
     }
   }
 }
 
-.green{
-  margin-top:1rem ;
+.green {
+  margin: 1rem;
   background-color: $Very-dark-cyan;
   padding: 1rem 2rem 2rem 2rem;
   border-radius: 1rem;
 
-  .result{
+  .result {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    h2{
+
+    h2 {
       font-size: 1rem;
       color: $Light-grayish-cyan;
     }
-    span{
+    span {
       color: $Grayish-cyan;
     }
-    p{
+    p {
       color: $Strong-cyan;
       font-size: 2rem;
       align-self: center;
-      
     }
   }
 
-  button{
+  button {
     width: 100%;
     border: 0;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     padding: 1rem;
     color: $Very-dark-cyan;
     background-color: $Strong-cyan;
     font-size: 1rem;
   }
-
 }
