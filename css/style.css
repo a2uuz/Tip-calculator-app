@@ -29,10 +29,14 @@ main {
   font-size: 1rem;
 }
 .white .input-field {
+  margin-top: 0.5rem;
   display: flex;
   padding: 0 1rem;
   background-color: #f4fafa;
   border-radius: 0.5rem;
+}
+.white .input-field:focus-within {
+  border: 2px solid #26c0ab;
 }
 .white .input-field input {
   width: 100%;
@@ -114,4 +118,9 @@ main {
   color: #00494d;
   background-color: #26c0ab;
   font-size: 1rem;
+}
+.green button:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
