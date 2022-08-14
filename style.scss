@@ -46,14 +46,15 @@ main {
   }
 
   .input-field {
+    margin-top: .5rem;
     display: flex;
     padding: 0 1rem;
     background-color: $Very-light-grayish-cyan;
     border-radius: 0.5rem;
 
-    //    &:focus{
-    //   border: 2px $Strong-cyan solid;
-    // }
+    &:focus-within {
+    border: 2px solid $Strong-cyan;
+}
     input {
       width: 100%;
       color: $Very-dark-cyan;
@@ -144,5 +145,11 @@ main {
     color: $Very-dark-cyan;
     background-color: $Strong-cyan;
     font-size: 1rem;
+
+    &:hover{
+      background-color: $Light-grayish-cyan;
+      color: $Very-dark-cyan;
+      cursor: pointer;
+    }
   }
 }
