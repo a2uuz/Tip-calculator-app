@@ -21,25 +21,25 @@
       <img src="./images/logo.svg" alt="logo" />
 
       <div class="wrapper">
-        <form class="white">
+        <form class="white" onsubmit="return false">
           <label for="bill">Bill</label>
           <div class="input-field">
             <img src="./images/icon-dollar.svg" alt="icon" />
-            <input type="text" dir="rtl" name="bill" />
+            <input type="text" dir="rtl" name="bill" id="bill"/>
           </div>
           <label for="select-tip">Select Tip %</label>
           <div class="btns">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
+            <button value=".05">5%</button>
+            <button value=".1">10%</button>
+            <button value=".15">15%</button>
+            <button value=".25">25%</button>
+            <button value=".50">50%</button>
             <input type="text"  name="custom" placeholder="custom" id="custom" dir="rtl"> 
           </div>
           <label for="nop">Number of People</label>
           <div class="input-field">
             <img src="./images/icon-person.svg" alt="icon" />
-            <input type="text" dir="rtl" name="nop" />
+            <input type="text" dir="rtl" name="nop" id="nop"/>
           </div>
           </form>
           <div class="green">
@@ -59,7 +59,7 @@
               
             </div>
 
-            <button>RESET</button>
+            <button id="reset">RESET</button>
           </div>
         
       </div>
