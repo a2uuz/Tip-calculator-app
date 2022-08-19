@@ -25,43 +25,47 @@
           <label for="bill">Bill</label>
           <div class="input-field">
             <img src="./images/icon-dollar.svg" alt="icon" />
-            <input type="text" dir="rtl" name="bill" id="bill"/>
+            <input type="text" dir="rtl" name="bill" id="bill" />
           </div>
           <label for="select-tip">Select Tip %</label>
           <div class="btns">
-            <button value=".05">5%</button>
-            <button value=".1">10%</button>
-            <button value=".15">15%</button>
-            <button value=".25">25%</button>
-            <button value=".50">50%</button>
-            <input type="text"  name="custom" placeholder="custom" id="custom" dir="rtl"> 
+            <button class="btn" value=".05">5%</button>
+            <button class="btn" value=".1">10%</button>
+            <button class="btn" value=".15">15%</button>
+            <button class="btn" value=".25">25%</button>
+            <button class="btn" value=".50">50%</button>
+            <input
+              type="text"
+              name="custom"
+              placeholder="custom"
+              id="custom"
+              dir="rtl"
+            />
           </div>
           <label for="nop">Number of People</label>
           <div class="input-field">
             <img src="./images/icon-person.svg" alt="icon" />
-            <input type="text" dir="rtl" name="nop" id="nop"/>
+            <input type="text" dir="rtl" name="nop" id="nop" />
           </div>
-          </form>
-          <div class="green">
-            <div id="tip-amount" class="result">
-              <h2>
-                Tip Amount <br />
-                <span>/ person</span>
-              </h2>
-              <p>$4.27</p>
-            </div>
-            <div id="total" class="result">
-              <h2>
-                Total <br />
-                <span>/ person</span>
-              </h2>
-              <p>$32.79</p>
-              
-            </div>
+        </form>
+        <div class="green">
+          <div class="result">
+            <h2>
+              Tip Amount <br />
+              <span>/ person</span>
+            </h2>
+            <p id="tip-amount">$0.00</p>
+          </div>
+          <div class="result">
+            <h2>
+              Total <br />
+              <span>/ person</span>
+            </h2>
+            <p id="total">$0.00</p>
+          </div>
 
-            <button id="reset">RESET</button>
-          </div>
-        
+          <button type="reset" id="reset">RESET</button>
+        </div>
       </div>
     </main>
   </body>
