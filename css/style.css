@@ -36,7 +36,7 @@ main {
   border-radius: 0.5rem;
 }
 .white .input-field:focus-within {
-  border: 2px solid #26c0ab;
+  outline: 3px solid #26c0ab;
 }
 .white .input-field input {
   width: 100%;
@@ -64,7 +64,7 @@ main {
   margin: 0.2rem;
   cursor: pointer;
 }
-.white .btns button:hover {
+.white .btns button:focus {
   opacity: 0.7;
 }
 .white .btns button:nth-child(3) {
@@ -84,7 +84,7 @@ main {
   color: #00494d;
 }
 .white .btns #custom:focus {
-  border: 2px solid #26c0ab;
+  border: 3px solid #26c0ab;
 }
 
 .green {
