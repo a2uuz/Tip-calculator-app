@@ -53,7 +53,7 @@ main {
     border-radius: 0.5rem;
 
     &:focus-within {
-    border: 2px solid $Strong-cyan;
+    outline: 3px solid $Strong-cyan;
 }
     input {
       width: 100%;
@@ -112,7 +112,7 @@ main {
       color: $Very-dark-cyan;
 
       &:focus {
-        border: 2px solid $Strong-cyan;
+        border: 3px solid $Strong-cyan;
       }
     }
   }
