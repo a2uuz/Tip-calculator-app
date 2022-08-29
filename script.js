@@ -6,13 +6,13 @@ const tipAmount = document.getElementById("tip-amount");
 const total = document.getElementById("total");
 const reset = document.getElementById("reset");
 const wrapper = document.querySelector(".wrapper");
-const error = document.querySelectorAll(".error .nop");
+const focus = document.querySelector(".focus");
+const error = document.querySelector(".error");
 let tipValue = 0.15;
 
 wrapper.addEventListener("keyup", () => {
   billInput = parseFloat(bill.value);
   nopInput = parseFloat(nop.value);
-
   ACTION();
 });
 
@@ -21,6 +21,28 @@ customPercent.addEventListener("input", CUSTOMINPUT);
 function CUSTOMINPUT() {
   tipValue = parseFloat(customPercent.value / 100);
 }
+
+focus.classList.remove("focus");
+error.classList.remove("focus");
+error.classList.remove("error");
+
+bill.addEventListener("input", () => {
+  if (bill.value) {
+    focus.classList.add("focus");
+  } else {
+    focus.classList.remove("focus");
+  }
+});
+
+nop.addEventListener("input", () => {
+  if (nop.value < 1) {
+    error.classList.remove("focus");
+    error.classList.add("error");
+  } else {
+    error.classList.add("focus");
+    error.classList.remove("error");
+  }
+});
 
 // TIP PERCENT BUTTONS FUNCTION
 tipPercent.forEach((val) => {

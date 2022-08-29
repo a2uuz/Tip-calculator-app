@@ -22,46 +22,54 @@
 
       <div class="wrapper">
         <form class="white" onsubmit="return false">
-          <label for="bill">Bill</label>
-          <div class="input-field border">
-            <img src="./images/icon-dollar.svg" alt="icon" />
-            <input type="text" dir="rtl" name="bill" id="bill" />
+          <div class="first">
+            <label for="bill">Bill</label>
+            <div class="input-field border focus">
+              <img src="./images/icon-dollar.svg" alt="icon" />
+              <input type="text" dir="rtl" name="bill" id="bill" />
+            </div>
           </div>
-          <label for="select-tip">Select Tip %</label>
-          <div class="btns">
-            <button class="btn">5%</button>
-            <button class="btn">10%</button>
-            <button class="btn">15%</button>
-            <button class="btn">25%</button>
-            <button class="btn">50%</button>
-            <input
-              type="text"
-              name="custom"
-              placeholder="custom"
-              id="custom"
-              dir="rtl"
-            />
+          <div class="second">
+            <label for="select-tip">Select Tip %</label>
+            <div class="btns">
+              <button class="btn">5%</button>
+              <button class="btn">10%</button>
+              <button class="btn">15%</button>
+              <button class="btn">25%</button>
+              <button class="btn">50%</button>
+              <input
+                type="text"
+                name="custom"
+                placeholder="custom"
+                id="custom"
+                dir="rtl"
+              />
+            </div>
           </div>
-          <label for="nop">Number of People</label>
-          <div class="input-field border error">
-            <img src="./images/icon-person.svg" alt="icon" />
-            <input type="text" dir="rtl" name="nop" id="nop" />
+          <div class="third">
+            <label for="nop">Number of People</label>
+            <div class="input-field border focus error">
+              <img src="./images/icon-person.svg" alt="icon" />
+              <input type="text" dir="rtl" name="nop" id="nop" />
+            </div>
           </div>
         </form>
         <div class="green">
-          <div class="result">
-            <h2>
-              Tip Amount <br />
-              <span>/ person</span>
-            </h2>
-            <p id="tip-amount">$0.00</p>
-          </div>
-          <div class="result">
-            <h2>
-              Total <br />
-              <span>/ person</span>
-            </h2>
-            <p id="total">$0.00</p>
+          <div class="outcome">
+            <div class="result">
+              <h2>
+                Tip Amount <br />
+                <span>/ person</span>
+              </h2>
+              <p id="tip-amount">$0.00</p>
+            </div>
+            <div class="result">
+              <h2>
+                Total <br />
+                <span>/ person</span>
+              </h2>
+              <p id="total">$0.00</p>
+            </div>
           </div>
           <button onClick="window.location.reload();" id="reset">RESET</button>
         </div>
