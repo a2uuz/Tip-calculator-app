@@ -19,6 +19,7 @@ main {
   background-color: #ffffff;
   border-radius: 2rem;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .white {
@@ -142,6 +143,13 @@ main {
 }
 
 @media (min-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   .wrapper {
     display: flex;
     flex-direction: row;
