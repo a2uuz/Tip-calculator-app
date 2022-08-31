@@ -8,6 +8,7 @@ const reset = document.getElementById("reset");
 const wrapper = document.querySelector(".wrapper");
 const focus = document.querySelector(".focus");
 const error = document.querySelector(".error");
+const noZero = document.querySelector(".no-zero");
 let tipValue = 0.15;
 
 wrapper.addEventListener("keyup", () => {
@@ -23,6 +24,7 @@ function CUSTOMINPUT() {
 }
 
 focus.classList.remove("focus");
+noZero.classList.remove("no-zero");
 error.classList.remove("focus");
 error.classList.remove("error");
 
@@ -38,9 +40,12 @@ nop.addEventListener("input", () => {
   if (nop.value < 1) {
     error.classList.remove("focus");
     error.classList.add("error");
+    noZero.classList.add("no-zero");
+    noZero.innerHTML = `Can't be Zero`;
   } else {
     error.classList.add("focus");
     error.classList.remove("error");
+    noZero.innerHTML = ``;
   }
 });
 

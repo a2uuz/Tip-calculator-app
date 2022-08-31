@@ -35,6 +35,21 @@ main {
 .white {
   padding: 1rem;
 
+  .first,
+  .second,
+  .third {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .labels {
+    display: flex;
+    justify-content: space-between;
+
+    .no-zero {
+      color: rgb(255, 83, 52);
+    }
+  }
   label {
     color: $Dark-grayish-cyan;
     font-size: 1rem;
@@ -43,7 +58,7 @@ main {
   .input-field {
     margin-top: 0.5rem;
     display: flex;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
     background-color: $Very-light-grayish-cyan;
     border-radius: 0.5rem;
 
@@ -76,8 +91,8 @@ main {
       background-color: $Very-dark-cyan;
       border: none;
       border-radius: 0.3rem;
-      padding: 0.6rem 1rem;
-      margin: 0.2rem;
+      padding: 0.7rem 1rem;
+      margin: 0.3rem;
       cursor: pointer;
 
       &:focus {
@@ -158,14 +173,15 @@ main {
     justify-content: space-between;
     width: 70%;
   }
-  .white {
-    width: 60%;
+
+  .white{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
+
   .green {
-    width: 40%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
